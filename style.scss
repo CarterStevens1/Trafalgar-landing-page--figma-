@@ -9,8 +9,26 @@ body {
   margin: 0;
   font-size: 18px;
 }
+
+hr {
+  display: inline-block;
+  width: 40px;
+  border: none;
+  background-color: black;
+  height: 3px;
+}
+
+.align-center,
+.section5 {
+  text-align: center;
+}
+
+.testimonial hr {
+  background-color: #fff;
+}
 .nav,
 .section1,
+.section2,
 .section3,
 .section4,
 .section5,
@@ -54,11 +72,29 @@ body {
 .section5,
 .section6 {
   padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.section-text {
+  flex: 1;
+  max-width: 40ch;
+
+  h1 {
+    margin-top: 0;
+  }
 }
 
 .image {
   max-width: 650px;
   height: auto;
+  flex: 1;
 }
 .consult {
   background-color: #458ff6;
@@ -70,7 +106,8 @@ body {
   line-height: 50px;
 }
 
-.learn {
+.learn,
+.download {
   display: block;
   border: 1.4px solid #458ff6;
   border-radius: 55px;
@@ -79,6 +116,13 @@ body {
   line-height: 50px;
   margin: auto;
   font-size: inherit;
+  margin-top: 4em;
+}
+
+.download,
+.section3 .learn {
+  display: inline;
+  margin-top: 2em;
 }
 
 .text {
@@ -100,14 +144,17 @@ body {
   opacity: 0.8;
 }
 
-.services,
-.section5 {
+.services {
   text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .cards {
   max-width: 85%;
   margin: 4em auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .item-cards {
@@ -115,7 +162,9 @@ body {
   border-radius: 20px;
   padding: 1.5em;
   max-width: 350px;
+  min-width: 320px;
   height: 350px;
+  flex: 1;
 }
 
 .testimonial {
@@ -128,11 +177,13 @@ body {
 .article {
   background: #ffffff;
   max-width: 350px;
+  min-width: 320px;
   /* drop shadow */
   margin: 2em 0em;
-
+  flex: 1;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
+  padding: 0em 1em;
 
   img {
     width: 100%;
@@ -142,6 +193,39 @@ body {
 
 .text-area {
   padding: 1em;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+}
+.article-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.section4 {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.text-area p {
+  color: #7d7987;
 }
 
 @media (min-width: 500px) {
