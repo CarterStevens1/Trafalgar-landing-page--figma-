@@ -22,14 +22,13 @@ hr {
 .testimonial hr {
   background-color: #fff; }
 
-.nav,
-.section1,
-.section2,
-.section3,
-.section4,
-.section5,
-.section6 {
-  width: 85%;
+.container,
+.nav {
+  width: 70%;
+  margin: 0 auto; }
+
+.section5 {
+  width: 60%;
   margin: 0 auto; }
 
 .nav {
@@ -54,12 +53,8 @@ hr {
   .nav-link:hover {
     opacity: 1; }
 
-.section1,
-.section2,
-.section3,
-.section4,
-.section5,
-.section6 {
+.container,
+.nav {
   padding-top: 3em;
   padding-bottom: 3em; }
 
@@ -70,15 +65,13 @@ hr {
   align-items: center; }
 
 .section-text {
-  flex: 1;
   max-width: 40ch; }
   .section-text h1 {
     margin-top: 0; }
 
 .image {
   max-width: 650px;
-  height: auto;
-  flex: 1; }
+  height: auto; }
 
 .consult {
   background-color: #458ff6;
@@ -98,7 +91,8 @@ hr {
   line-height: 50px;
   margin: auto;
   font-size: inherit;
-  margin-top: 4em; }
+  margin-top: 4em;
+  background-color: transparent; }
 
 .download,
 .section3 .learn {
@@ -130,7 +124,8 @@ hr {
   max-width: 85%;
   margin: 4em auto;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .item-cards {
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
@@ -139,13 +134,16 @@ hr {
   max-width: 350px;
   min-width: 320px;
   height: 350px;
-  flex: 1; }
+  flex: 1 1 33%; }
 
 .testimonial {
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
   border-radius: 24px;
-  padding: 1em;
+  padding: 2em;
   color: #fff; }
+
+.testimonial-text p {
+  max-width: 40ch; }
 
 .article {
   background: #ffffff;
@@ -168,10 +166,21 @@ hr {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
+
+.author-name {
+  padding-left: 1em;
+  text-align: start; }
 
 .author {
-  display: flex; }
+  display: flex;
+  align-items: center; }
+  .author p {
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .author .name {
+    font-size: 22px; }
 
 .article-cards {
   display: flex;
@@ -206,5 +215,14 @@ hr {
 
   .burger {
     display: none; } }
+@media (max-width: 650px) {
+  .container,
+  .nav,
+  .section5 {
+    width: 80%;
+    margin: 0 auto; }
+
+  .testimonial h2 {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=style.css.map */
