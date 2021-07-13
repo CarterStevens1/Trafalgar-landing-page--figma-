@@ -134,7 +134,8 @@ hr {
   max-width: 350px;
   min-width: 320px;
   height: 350px;
-  flex: 1 1 33%; }
+  flex: 1 1 33%;
+  background-color: #fff; }
 
 .testimonial {
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
@@ -154,7 +155,7 @@ hr {
   flex: 1;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
-  padding: 0em 1em; }
+  margin: 0em 1em; }
   .article img {
     width: 100%;
     border-radius: 20px 20px 0px 0px; }
@@ -186,6 +187,16 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+
+.bg-container {
+  background-image: url("images/bg element.png");
+  background-repeat: no-repeat;
+  z-index: -1; }
+
+.bg-container-reverse {
+  background-image: url("images/Vector.png");
+  background-repeat: no-repeat;
+  background-position: right; }
 
 .section3 {
   display: flex;
